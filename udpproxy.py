@@ -22,5 +22,5 @@ while True:
 
     response = requests.post(REST_API_URL, json=message_dictionary)
     # json=... automatically serializes the dictionary to JSON
-    # json=... parameter automatically sets the Content-Type header to application/json
+    # json=... automatically sets the Content-Type header to application/json
     print(f'Response from REST API: {response.status_code} - {response.text}')  
